@@ -1,168 +1,194 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Andrew Martin</title>
-        <meta name="description" content="">
+        <title>Andrew Martin | Geospatial Developer & GIS Analyst</title>
+        <meta name="description" content="Andrew Martin - Geospatial Developer, GIS Analyst, and Digital Cartographer specializing in indoor positioning maps, spatial analysis, and digital cartography.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./styles/main.css">
+        <link rel="icon" type="image/jpeg" href="./assets/images/profile_picture.jpeg">
     </head>
     
     <body>
-        <div id="container--main">
+        <!-- Glass Header -->
+        <header class="site-header">
+            <div class="site-header__content">
+                <a href="index.html" class="site-header__logo">
+                    <img src="./assets/images/profile_picture.jpeg" alt="Andrew Martin" class="site-header__avatar">
+                    <span class="site-header__name">Andrew Martin</span>
+                </a>
+                <nav class="site-header__nav">
+                    <a href="#skills" class="site-header__link">Skills</a>
+                    <a href="#experience" class="site-header__link">Experience</a>
+                    <a href="#projects" class="site-header__link">Projects</a>
+                    <a href="./assets/resume.pdf" target="_blank" class="site-header__link">Resume</a>
+                </nav>
+            </div>
+        </header>
 
-            <section id="wrapper--hero" class="section--page">
-                <img id="profile-pic" src="./assets/images/profile_picture.jpeg">
+        <div class="container">
+            <main>
+                <!-- Hero Section -->
+                <section class="section hero">
+                    <div class="hero__image-wrapper">
+                        <img id="profile-pic" class="hero__image" src="./assets/images/profile_picture.jpeg" alt="Andrew Martin - Profile Photo">
+                    </div>
+                    <div class="hero__content">
+                        <h1 class="hero__name">Andrew Martin</h1>
+                        <p class="hero__title">Geospatial Developer, GIS Analyst, & Digital Cartographer</p>
+                        <p class="hero__title">Digital Map Designer at <a href="https://www.goziohealth.com/" target="_blank" class="hero__company">Gozio</a></p>
+                        <div class="hero__email">
+                            <span>📧</span>
+                            <span>andrew.martin.gis@outlook.com</span>
+                        </div>
+                        <div class="socials">
+                            <a href="https://www.linkedin.com/in/andrew-martin-gis/" target="_blank" class="social-link">
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="./assets/resume.pdf" target="_blank" class="social-link">
+                                <span>Resume</span>
+                            </a>
+                        </div>
+                    </div>  
+                </section>
 
-                <div>
-                    <h1 id="user-name">Andrew Martin</h1>
-                    <p id="bio">Geospatial Developer, GIS Analyst, & Digital Cartographer</p>
-                    <p id="job">Digital Map Designer at <a href="https://www.goziohealth.com/" target="_blank">Gozio</a></p>
-                    <p id="email">📧 andrew.martin.gis@outlook.com</p>
-                </div>  
-            </section>
-
-            <section class="section--page">
-                <div id="socials--list">
-                    <a href="https://www.linkedin.com/in/andrew-martin-gis/" target="_blank">LinkedIn</a>
-                    <a href="./assets/resume.pdf" target="_blank">Download Resume</a>
-                </div>
-            </section>
-
-            <section class="section--page">
-                <h2>Skills & Qualifications</h2>
-                <ul id="qualifications--list">
-                    <li>✔️ Creation, conversion, management, and analysis of GIS data</li>
-                    <li>✔️ Advanced spatial statistics techniques</li>
-                    <li>✔️ Working with and maintaining geodatabases</li>
-                    <li>✔️ Development and use of geoprocessing tools</li>
-                    <li>✔️ Advanced data modeling and cartographic techniques</li>
-                    <li>✔️ Hydrological analysis</li>
-                    <li>✔️ Technical Writing</li>
-                    <li>✔️ Experience reading architectural CAD plans</li>
-                </ul>
-            </section>
-
-            <section class="section--page">
-                <h2>Tech Stack</h2>
-
-                <div id="wrapper--techstack__items">
-                    <div class="card--techstack"><span>Python</span></div>
-                    <div class="card--techstack"><span>ArcPy</span></div>
-                    <div class="card--techstack"><span>Unix</span></div>
-                    <div class="card--techstack"><span>SQL</span></div>
-                    <div class="card--techstack"><span>XML</span></div>
-                    <div class="card--techstack"><span>JSON</span></div>
-                    <div class="card--techstack"><span>R</span></div>
-                </div>
-            </section>
-
-            <section class="section--page">
-                <h2>Software</h2>
-
-                <div id="wrapper--software__items">
-                    <div class="card--software"><span>ArcGIS Pro</span></div>
-                    <div class="card--software"><span>ArcMap</span></div>
-                    <div class="card--software"><span>ArcGIS Web AppBuilder</span></div>
-                    <div class="card--software"><span>ArcGIS StoryMaps</span></div>
-                    <div class="card--software"><span>ArcGIS Survey123</span></div>
-                    <div class="card--software"><span>JOSM</span></div>
-                    <div class="card--software"><span>R Studio</span></div>
-                    <div class="card--software"><span>IBM SPSS</span></div>
-                    <div class="card--software"><span>Visual Studio Code</span></div>
-                    <div class="card--software"><span>Jira</span></div>
-                    <div class="card--software"><span>Confluence</span></div>
-                    <div class="card--software"><span>Bitbucket</span></div>
-                    <div class="card--software"><span>GitHub</span></div>
-                    <div class="card--software"><span>Microsoft Office Suite</span></div>
-                </div>
-            </section>
-
-            <section id="education-wrapper" class="section--page">
-                <h2>Education</h2>
-
-                <div class="line-break"></div>
-                <div class="card--education">
-                    <strong>BACHELOR OF SCIENCE: APPLIED GEOGRAPHY | UNIVERSITY OF LOUISVILLE</strong>
-                    <p>08/2018 - 12/2023</p>
-                    <p>Track in Geospatial Technologies</p>
-                </div>
-            </section>
-
-            <section id="work-history-wrapper" class="section--page">
-                <h2>Work History</h2>
-
-                <div class="line-break"></div>
-                <div class="card--work-history">
-                    <strong>DIGITAL MAP DESIGNER | GOZIO</strong>
-                    <p>07/2022 - Present</p>
-                    <p>Design digital 3D maps for indoor positioning & navigation.</p>
-                    <ul>
-                        <li>Create and maintain all things related to indoor maps, navigation, and positioning</li>
-                        <li>Develop mapping solutions to increase efficiency in a fast growing software development company</li>
+                <!-- Skills & Qualifications -->
+                <section id="skills" class="section">
+                    <h2>Skills & Qualifications</h2>
+                    <ul class="skills-list">
+                        <li>Creation, conversion, management, and analysis of GIS data</li>
+                        <li>Advanced spatial statistics techniques</li>
+                        <li>Working with and maintaining geodatabases</li>
+                        <li>Development and use of geoprocessing tools</li>
+                        <li>Advanced data modeling and cartographic techniques</li>
+                        <li>Hydrological analysis</li>
+                        <li>Technical Writing</li>
+                        <li>Experience reading architectural CAD plans</li>
                     </ul>
-                </div>
+                </section>
 
-                <div class="line-break"></div>
+                <!-- Tech Stack -->
+                <section class="section">
+                    <h2>Tech Stack</h2>
+                    <div class="tech-grid">
+                        <span class="tech-item">Python</span>
+                        <span class="tech-item">ArcPy</span>
+                        <span class="tech-item">Unix</span>
+                        <span class="tech-item">SQL</span>
+                        <span class="tech-item">XML</span>
+                        <span class="tech-item">JSON</span>
+                        <span class="tech-item">R</span>
+                    </div>
+                </section>
 
-                <div class="card--work-history">
-                    <strong>VETERINARY ASSISTANT | VCA SHELDEN ANIMAL HOSPITAL</strong>
-                    <p>09/2019 - 07/2022</p>
-                    <p>Assisted veterinarian during medical, surgical and diagnostic procedures.</p>
-                </div>
+                <!-- Software -->
+                <section class="section">
+                    <h2>Software</h2>
+                    <div class="software-grid">
+                        <span class="software-item">ArcGIS Pro</span>
+                        <span class="software-item">ArcMap</span>
+                        <span class="software-item">ArcGIS Web AppBuilder</span>
+                        <span class="software-item">ArcGIS StoryMaps</span>
+                        <span class="software-item">ArcGIS Survey123</span>
+                        <span class="software-item">JOSM</span>
+                        <span class="software-item">R Studio</span>
+                        <span class="software-item">IBM SPSS</span>
+                        <span class="software-item">Visual Studio Code</span>
+                        <span class="software-item">Jira</span>
+                        <span class="software-item">Confluence</span>
+                        <span class="software-item">Bitbucket</span>
+                        <span class="software-item">GitHub</span>
+                        <span class="software-item">Microsoft Office Suite</span>
+                    </div>
+                </section>
 
-                <div class="line-break"></div>
+                <!-- Education -->
+                <section class="section">
+                    <h2>Education</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h3 class="timeline-item__title">BACHELOR OF SCIENCE: APPLIED GEOGRAPHY | UNIVERSITY OF LOUISVILLE</h3>
+                            <p class="timeline-item__date">08/2018 - 12/2023</p>
+                            <p class="timeline-item__description">Track in Geospatial Technologies</p>
+                        </div>
+                    </div>
+                </section>
 
-                <div class="card--work-history">
-                    <strong>COMPUTER SALES ASSOCIATE | BEST BUY</strong>
-                    <p>11/2017 - 01/2020</p>
-                    <p>Built strong relationships with store customers based on knowledgeable support for diverse computer needs.</p>
-                    <ul>
-                        <li>$868,000 in sales as a part-time sales associate in 2019</li>
-                    </ul>
-                </div>
-            </section>
+                <!-- Work History -->
+                <section id="experience" class="section">
+                    <h2>Experience</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h3 class="timeline-item__title">DIGITAL MAP DESIGNER | GOZIO</h3>
+                            <p class="timeline-item__date">07/2022 - Present</p>
+                            <p class="timeline-item__description">Design digital 3D maps for indoor positioning & navigation.</p>
+                            <ul>
+                                <li>Create and maintain all things related to indoor maps, navigation, and positioning</li>
+                                <li>Develop mapping solutions to increase efficiency in a fast growing software development company</li>
+                            </ul>
+                        </div>
 
-            <section id="academic--research" class="section--page">
-                <h2>Academic Research</h2>
+                        <div class="timeline-item">
+                            <h3 class="timeline-item__title">VETERINARY ASSISTANT | VCA SHELDEN ANIMAL HOSPITAL</h3>
+                            <p class="timeline-item__date">09/2019 - 07/2022</p>
+                            <p class="timeline-item__description">Assisted veterinarian during medical, surgical and diagnostic procedures.</p>
+                        </div>
 
-                <div class="card--project">
-                    <a href="project1.html"><span>🎓 </span>A Hydroclimatological Analysis of Severe Flood Events: A Case Study of Whitesburg, KY</a>
-                </div>
+                        <div class="timeline-item">
+                            <h3 class="timeline-item__title">COMPUTER SALES ASSOCIATE | BEST BUY</h3>
+                            <p class="timeline-item__date">11/2017 - 01/2020</p>
+                            <p class="timeline-item__description">Built strong relationships with store customers based on knowledgeable support for diverse computer needs.</p>
+                            <ul>
+                                <li>$868,000 in sales as a part-time sales associate in 2019</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
 
-            </section>
+                <!-- Academic Research -->
+                <section id="projects" class="section">
+                    <h2>Academic Research</h2>
+                    <div class="projects-grid">
+                        <a href="project1.html" class="project-card">
+                            <span class="project-card__icon">🎓</span>
+                            <span class="project-card__title">A Hydroclimatological Analysis of Severe Flood Events: A Case Study of Whitesburg, KY</span>
+                        </a>
+                    </div>
+                </section>
 
-        </section>
+                <!-- Development Projects -->
+                <section class="section">
+                    <h2>Development Projects</h2>
+                    <div class="projects-grid">
+                        <a href="project2.html" class="project-card">
+                            <span class="project-card__icon">💻</span>
+                            <span class="project-card__title">JOSM Grid Creation Automation Python Script</span>
+                        </a>
+                    </div>
+                </section>
 
-        <section id="development--projects" class="section--page">
-            <h2>Development Projects</h2>
+                <!-- Cartography Portfolio -->
+                <section class="section">
+                    <h2>Cartography Portfolio</h2>
+                    <div class="projects-grid">
+                        <a href="project3.html" class="project-card">
+                            <span class="project-card__icon">🗺️</span>
+                            <span class="project-card__title">Poverty Inequality of Kentucky Census Tracts 2020 (WebMap)</span>
+                        </a>
 
-            <div class="card--project">
-                <a href="project2.html"><span>💻 </span>JOSM Grid Creation Automation Python Script</script></a>
-            </div>
+                        <a href="project4.html" class="project-card">
+                            <span class="project-card__icon">🗺️</span>
+                            <span class="project-card__title">Clay City Flood Map</span>
+                        </a>
 
-        </section>
-
-        <section id="cartography--portfolio" class="section--page">
-            <h2>Cartography Portfolio</h2>
-
-            <div class="card--project">
-                <a href="project3.html" ><span>🗺️ </span>Poverty Inequality of Kentucky Census Tracts 2020 (WebMap)</a>
-            </div>
-
-            <div class="card--project">
-                <a href="project4.html" ><span>🗺️ </span>Clay City Flood Map</a>
-            </div>
-
-            <div class="card--project">
-                <a href="project5.html"><span>🗺️ </span>Shifting Kentucky Away From Coal To Sustainable Energy (StoryMap)</a>
-            </div>
-
-        </section>
-
-       
+                        <a href="project5.html" class="project-card">
+                            <span class="project-card__icon">🗺️</span>
+                            <span class="project-card__title">Shifting Kentucky Away From Coal To Sustainable Energy (StoryMap)</span>
+                        </a>
+                    </div>
+                </section>
+            </main>
         </div>
-
     </body>
 </html>
