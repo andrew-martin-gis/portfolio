@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>JOSM Grid Creation | Andrew Martin</title>
-        <meta name="description" content="JOSM Grid Creation Automation Python Script by Andrew Martin">
+        <title>OSM Portal Bounding Box Coordinate Extractor | Andrew Martin</title>
+        <meta name="description" content="OSM Portal Bounding Box Coordinate Extractor - Python scripts by Andrew Martin">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./styles/main.css">
         <link rel="icon" type="image/jpeg" href="./assets/images/profile_picture.jpeg">
@@ -12,19 +12,21 @@
     <body>
         <div class="project-detail">
             <a href="index.html" class="back-link">← Back to Portfolio</a>
-            <h1>JOSM Grid Creation Automation Python Script</h1>
+            <h1>OSM Portal Bounding Box Coordinate Extractor</h1>
 
             <div class="project-links">
-                <a href="https://github.com/andrew-martin-gis/CreateOSM_MB" target="_blank" class="project-link">
+                <a href="https://github.com/andrew-martin-gis/osm-find-coords" target="_blank" class="project-link">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
                     View Project on GitHub
                 </a>
             </div>
 
             <div class="project-detail__content">
-                <p>This Python Script is used to automate the grid creation process in JOSM.</p>
+                <p>Scripts for extracting portal bounding box coordinates from OSM XML files.</p>
 
-                <p>This script takes 2 coordinates, a top left and a bottom right, to create an array of grids with the offset calculation. It is dependent on user input for a few other factors such as the number of grids you would like to make and the naming scheme. It then creates an .osm file for each grid with a bounding box drawn and a single node inside as a placeholder to open in JOSM.</p>
+                <p><strong>find_coords.py</strong> — Extracts portal coordinates for a specific site/building from its OSM files and prints them alongside their floor IDs. Prompts for a site number and building number, then finds all matching <code>.osm</code> files in the current directory and prints the <code>minlon,minlat,maxlon,maxlat</code> bounding box for each floor.</p>
+
+                <p><strong>find_all_coords.py</strong> — Processes all <code>.osm</code> files in the current directory and exports their portal coordinates to a CSV file (<code>all_site_coords.csv</code>).</p>
             </div>
         </div>
     </body>
