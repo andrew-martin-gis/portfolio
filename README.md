@@ -4,4 +4,4 @@ Personal portfolio website for Andrew Martin — Geospatial Developer, GIS Analy
 
 Built with HTML and CSS. Includes work history, skills, academic research, development projects, and a cartography portfolio.
 
-Live at: https://sntpm.github.io/portfolio
+Live at: https://andrew-martin-gis.github.io/portfolio/
